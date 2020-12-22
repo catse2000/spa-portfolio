@@ -1,21 +1,21 @@
-
 main {
 	margin: 0 auto;
 	max-width: 90%;
   padding: 50px 30px;
 }
 :root {
-  --primary: #8c54ff;
-  --secondary: #F3A847;
-  --tertiary: #B12704;
-  --light: #fafafa;
-  --dark: #000000;
-  --darker: #111111;
   --error: rgb(228, 46, 1);
   --spacing-one: calc(1rem * 0.5);
   --spacing-two: calc(1rem);
   --spacing-five: calc(2.5rem);
-
+  
+  --white-color: #ffffff;
+  --Dark-Purple: #462873;
+  --Dark-Purple-Opaque: rgba(70, 40, 115, .75);
+  --Light-Purple: #9484B2;
+  --Light-Purple-Opaque: rgba(148, 132, 178, .75);
+  --Light-Pink: #FFD9EE;
+  --Teal: #0ddab4;
 }
 
 * {
@@ -34,9 +34,8 @@ body {
   line-height: 1.5;
   font-size: 18px;
   letter-spacing: .1em;
-  background: var(--dark);
-  color: var(--light);
-  font-family: 'Poiret One', cursive;
+  background: var(--Light-Purple);
+  font-family: 'Century Gothic', 'Century Gothic', 'Apple Gothic', sans-serif;
 
 }
 
@@ -46,14 +45,15 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Roboto', sans-serif;
   font-weight: 500;
   margin: 5px 0;
-  line-height: 1.25;
+  color: white;
+  /*line-height: 1.25;*/
 }
 
 h1 {
   font-size: 2.25rem;
+  font-weight: bold;
 }
 
 h2 {
@@ -61,7 +61,7 @@ h2 {
 }
 
 h3 {
-  font-size: 1.75rem;
+  font-size: 1.6rem;
 }
 
 h4 {
@@ -79,12 +79,18 @@ h6 {
 p {
   font-size: 1.1rem;
   margin-top: 0;
+  color: var(--Dark-Purple);
 }
 
 a {
-  color: var(--tertiary);
+  color: white;
   text-decoration: none;
   font-weight: bold;
+  border-radius: 5px;
+	font-weight: 600;
+	padding: 2px 4px;
+	margin-left: -2px;
+	margin-right: -2px;
 }
 
 a:hover {
@@ -92,27 +98,57 @@ a:hover {
 }
 
 header {
-  background: var(--dark);
+  background-image: url(assets/background/background.jpg);
+  background-size: cover;
+  background-position: 80% 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  top: 0;
+  padding: 15px;
+  z-index: 9999;
 }
 
-header a {
-  color: var(--light);
+.header-name{
+  text-align: center;
+  line-height: 0.5;
+  padding: 0px 25px 25px;
+
+}
+
+header h2{
+  padding: 15px;
+  color: var(--white-color);
+  font-weight: bold;
+}
+
+header h3{
+  color: var(--Teal);
+  font-weight: lighter;
+
+}
+
+header a:hover {
+  text-decoration: none;
 }
 
 button {
   font-size: 1rem;
   text-decoration: none;
-  padding: 0.25rem 1rem;
+  padding: 0.5rem 1rem;
   border-radius: .5rem;
   border: none;
   outline: none;
   cursor: pointer;
   margin: 0 1px;
-  background-color: var(--secondary);
+  background-color: var(--Dark-Purple);
+  color: var(--white-color);
 }
 
 button:hover {
   opacity: .8;
+  color: var(--Light-Pink);
 }
 
 button[disabled] {
@@ -129,21 +165,30 @@ span[role="img"] {
 }
 
 form {
-  width: 40%;
+  width: 80%;
 }
 
-input {
+label{
+  color: var(--Dark-Purple);
+}
+
+input, textarea {
   font-size: 1rem;
+  width: 100%;
   padding: 0.25rem;
-  border: 1px solid var(--dark);
+  margin-bottom: .5rem;
+  border: 1px solid var(--Dark-Purple);
   outline: none;
-  border-radius: 3px;
+  border-radius: 10px;
   transition: box-shadow 0.2s;
+  background-color: var(--white-color);
 }
 
-input:focus {
-  border: 1px solid var(--secondary);
+input:focus, textarea:focus {
+  border: 1px solid var(--white-color);
+  color: black;
   box-shadow: 0 0 .25rem rgba(0, 0, 0, .5);
+
 }
 
 li {
@@ -152,17 +197,17 @@ li {
 
 nav a:hover {
   text-decoration: none;
+  color: Pink;
 }
 
-nav  li {
+nav li {
   cursor: pointer;
+  color: white;
+  font-size: 1em;
 }
 
-textarea {
-	width: 600px;
-	height: 120px;
-	border: 3px solid #cccccc;
-	padding: 5px;
+nav li:hover {
+  color: var(--Teal);
 }
 
 .container {
@@ -240,6 +285,7 @@ textarea {
   height: 300px;
   margin-bottom: 50px;
   cursor: pointer;
+  border-radius: 10px;
 }
 
 .modalBackdrop {
@@ -254,7 +300,7 @@ textarea {
 }
 
 .modalContainer {
-	background: var(--darker);
+  background: black;
 	border-radius: 5px;
 	max-width: 100%;
 	margin: 50px auto;
@@ -262,34 +308,16 @@ textarea {
 	width: 960px;
 }
 
+.modalContainer p {
+  color: white;
+}
 .modalTitle {
-	font-size: 18px;
+	font-size: 24px;
 	font-weight: 600;
-	margin-bottom: 25px;
-}
-
-button {
-	background: var(--primary);
-	border: 0;
-	border-radius: 5px;
-	color: #fff;
-	cursor: pointer;
-	font-size: 16px;
-	font-weight: 600;
-	margin-bottom: 30px;
-	padding: 10px 15px;	
-}
-
-a {
-	border-radius: 5px;
-	color: var(--primary);
-	font-weight: 600;
-	padding: 2px 4px;
-	margin-left: -2px;
-	margin-right: -2px;
-	
+  margin-bottom: 25px;
+  color: var(--Teal);
 }
 
 .navActive {
-  color: var(--secondary);
+  color: var(--Teal);
 }

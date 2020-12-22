@@ -15,25 +15,24 @@ function Nav(props) {
 
     return (
         <header>
-            <h2>
-                <a href="/">
-                    Amanda Babineaux
-                </a>
-            </h2>
+            <a href="/" className="header-name">
+                <h2>Amanda Babineaux</h2>
+                <h3>Web Developer Portfolio</h3>
+            </a>
             <nav>
                 <ul className="flex-row">
-                    <li className={`mx-2 ${contactSelected && 'navActive'}`}>
+                    <li className={`mx-1 ${contactSelected && 'navActive'}`}>
                         <a href="#about" onClick={() => setContactSelected(false)}>
-                            About Me
+                            <span>About Me</span>
                         </a>
                     </li>
-                    <li>
+                    <li className="mx-1">
                         <span onClick={() => setContactSelected(true)}>Contact</span>
                     </li>
-                    <li>
+                    <li className="mx-1">
                         <span>Projects</span>
                     </li>
-                    <li>
+                    <li className="mx-1">
                         <span>Resume</span>
                     </li>
                     {categories.map((category) => (
