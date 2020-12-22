@@ -1,4 +1,3 @@
-import './App.css';
 import React, {useState} from 'react';
 import About from './components/About';
 import Nav from './components/Nav';
@@ -27,7 +26,7 @@ const [currentCategory, setCurrentCategory] = useState(categories[0]);
       setCurrentCategory={setCurrentCategory}
       currentCategory={currentCategory}></Nav>
       <main>
-        <Projects></Projects>
+        <Projects currentCategory={currentCategory}></Projects>
         <About></About>
       </main>
     </div>
