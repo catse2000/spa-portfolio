@@ -19,17 +19,28 @@ function App() {
         description: "Team projects I've worked on"
     }
 ]);
+
 const [currentCategory, setCurrentCategory] = useState(categories[0]);
+const [contactSelected, setContactSelected] = useState(false);
+
   return (
     <div>
       <Nav
-      categories={categories}
-      setCurrentCategory={setCurrentCategory}
-      currentCategory={currentCategory}></Nav>
+        categories={categories}
+        setCurrentCategory={setCurrentCategory}
+        currentCategory={currentCategory}
+        contactSelected={contactSelected}
+        setContactSelected={setContactSelected}
+      ></Nav>
       <main>
-        <ContactForm></ContactForm>
-        <Projects currentCategory={currentCategory}></Projects>
-        <About></About>
+        {!contactSelected ? (
+          <>
+          <Projects currentCategory={currentCategory}></Projects>
+          <About></About>
+          </>
+        ): (
+          <ContactForm></ContactForm>
+        )}
       </main>
     </div>
   );
