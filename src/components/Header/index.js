@@ -1,31 +1,36 @@
-import React, { useEffect} from 'react';
-import {NavLink} from "react-router-dom";
+import React, { useEffect } from 'react';
+import { NavLink } from "react-router-dom";
 
 function Header() {
     return (
-        <header>
-            <a href="/" className="header-name">
-                <h2>Amanda Babineaux</h2>
-                <h3>Web Developer Portfolio</h3>
-            </a>
-            <nav>
-                <ul className="flex-row">
-                    <li className="mx-1">
-                        <NavLink to='/about'>About</NavLink>
-                    </li>
-                    <li className="mx-1">
-                        <NavLink to='/contact'>Contact</NavLink>
-                    </li>
-                    <li className="mx-1">
-                        <NavLink to='/projects'>Projects</NavLink>
-                    </li>
-                    <li className="mx-1">
-                        <NavLink to='/resume'>Resume</NavLink>
-                    </li>
-                </ul>
-            </nav>
-        </header>
-
+        <div>
+            <header>
+                <div class="container">
+                    <div class="d-flex justify-content-between align-items-center">
+                    <a href="/" className="header-name">
+                        <h1>Amanda Babineaux</h1>
+                        <h2>Web Developer Portfolio</h2>
+                    </a>
+                    <nav>
+                        <ul className="nav">
+                            <li className="nav-link active">
+                                <NavLink to='/about'>About</NavLink>
+                            </li>
+                            <li className="nav-link">
+                                <NavLink to='/contact'>Contact</NavLink>
+                            </li>
+                            <li className="nav-link">
+                                <NavLink to='/projects'>Projects</NavLink>
+                            </li>
+                            <li className="nav-link">
+                                <NavLink to='/resume'>Resume</NavLink>
+                            </li>
+                        </ul>
+                    </nav>
+                    </div>
+                </div>
+            </header>
+        </div>
     )
 };
 
