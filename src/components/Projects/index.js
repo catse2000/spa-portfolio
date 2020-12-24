@@ -1,5 +1,4 @@
 import React from 'react';
-//import Card from 'react-bootstrap/Card';
 
 function Project() {
     const photos = [
@@ -110,8 +109,8 @@ function Project() {
                             <p class="card-text">{e.description}</p>
                         </div>
                         <div class="card-body d-flex">
-                            <a href={e.github} class="card-link" alt=""><i class="fab fa-github fa-2x mx-1"></i></a>
-                            {e.site != '' && <a href={e.site} class="card-link" alt=""><i class="fas fa-external-link-alt fa-2x mx-1"></i></a>}
+                            <a href={e.github} class="card-link" alt={e.name} target="_blank" rel="noopener noreferrer"><i class="fab fa-github fa-2x mx-1"></i></a>
+                            {e.site != '' && <a href={e.site} class="card-link" alt="" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt fa-2x mx-1"></i></a>}
                         </div>
                     </div>
                 </div>
