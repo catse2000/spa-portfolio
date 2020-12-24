@@ -4,97 +4,120 @@ import React from 'react';
 function Project() {
     const photos = [
         {
-            name: 'Project 1',
-            category: 'Front-End Projects',
+            name: 'Password Generator',
+            type: 'Javascript',
+            site: 'https://catse2000.github.io/password-generator/',
+            github: 'https://github.com/catse2000/password-generator',
             description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie'
         },
         {
-            name: 'Project 2',
-            category: 'Front-End Projects',
+            name: 'Coding Quiz Challenge',
+            type: 'Web API',
+            site: 'https://catse2000.github.io/challenge-assessment/',
+            github: 'https://github.com/catse2000/challenge-assessment',
             description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie'
         },
         {
-            name: 'Project 3',
-            category: 'Front-End Projects',
+            name: 'Work Day Scheduler',
+            type: 'Third-Party APIs',
+            site: 'https://catse2000.github.io/work-day-scheduler/',
+            github: 'https://github.com/catse2000/work-day-scheduler',
             description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie'
         },
         {
-            name: 'Project 4',
-            category: 'Front-End Projects',
+            name: 'Weather Dashboard',
+            type: 'Server Side API',
+            site: 'https://catse2000.github.io/weather-forecast-app/',
+            github: 'https://github.com/catse2000/weather-forecast-app',
             description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie'
         },
         {
-            name: 'Project 5',
-            category: 'Back-End Projects',
+            name: 'Star Gazr - Team Project',
+            type: 'Front-End Site',
+            site: 'https://p1t2-batman.github.io/stargazr/',
+            github: 'https://github.com/p1t2-batman/stargazr',
             description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie'
         },
         {
-            name: 'Project 6',
-            category: 'Back-End Projects',
+            name: 'Readme Generator',
+            type: 'Node.js',
+            site: '',
+            github: 'https://github.com/catse2000/readme-generator',
             description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie'
         },
         {
-            name: 'Project 7',
-            category: 'Back-End Projects',
+            name: 'Team Profile Generator',
+            type: 'Object-Oriented Programming',
+            site: '',
+            github: 'https://github.com/catse2000/team-profile-generator',
             description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie'
         }, 
         {
-            name: 'Project 8',
-            category: 'Back-End Projects',
+            name: 'Note Keeper',
+            type: 'Express.js',
+            site: 'https://mighty-tor-38638.herokuapp.com/',
+            github: 'https://github.com/catse2000/note-keeper',
             description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie'
         }, 
         {
-            name: 'Project 9',
-            category: 'Back-End Projects',
+            name: 'Employee Tracker',
+            type: 'SQL',
+            site: '',
+            github: 'https://github.com/catse2000/employee-tracker',
             description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie'
         }, 
         {
-            name: 'Project 10',
-            category: 'Back-End Projects',
+            name: 'E-Commerce',
+            type: 'Object Relational Mapping (ORM)',
+            site: '',
+            github: 'https://github.com/catse2000/e-commerce',
             description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie'
         }, 
         {
-            name: 'Project 11',
-            category: 'Back-End Projects',
+            name: 'The Tech Blog',
+            type: 'Model-View-Controller (MVC)',
+            site: 'https://cryptic-sands-31802.herokuapp.com/',
+            github: 'https://github.com/catse2000/tech-blog',
             description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie'
         }, 
         {
-            name: 'Project 12',
-            category: 'Team Projects',
+            name: 'Budget Calculator',
+            type: 'Progressive Web Applications (PWA)',
+            site: 'https://shrouded-atoll-40459.herokuapp.com/',
+            github: 'https://github.com/catse2000/budget-tracker',
             description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie'
         },
         {
-            name: 'Project 13',
-            category: 'Team Projects',
+            name: 'Nebula-Edu - Team Project',
+            type: 'Front End Site',
+            site: 'https://enigmatic-sea-17171.herokuapp.com/',
+            github: 'https://github.com/Team-Lemon/Nebula-Edu',
             description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie'
         }
     ];
 
     return (
-        // <div className="flex-row">
-        // {photos.map((e,i) => 
-        //     <Card style={{ width: '18rem'}}>
-        //         <Card.Img variant="top" src={require(`../../assets/large/${i}.jpg`)} />
-        //         <Card.Body>
-        //             <Card.Title>{e.name}</Card.Title>
-        //             <Card.Text>{e.description}</Card.Text>
-        //         </Card.Body>
-        //     </Card>
-        // )}
-        // </div>
-        <div class="row row-cols-4 row-cols-md-4 g-4">
+        <section className="m-4">
+            <h2 className="my-4 text-center">Project Gallery</h2>
+            <p className="text-center">Here is an assortment of the various projects I've worked on.</p>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
             {photos.map((e,i) =>
                 <div class="col"> 
-                    <div class="card bg-dark text-white">
-                        <img src={require(`../../assets/large/${i}.jpg`)} alt={e.name} />
-                        <div class="card-img-overlay">
+                    <div class="card shadow-sm">
+                        <img className="card-img-top" src={require(`../../assets/large/${i}.jpg`)} alt={e.name} />
+                        <div class="card-body">
                             <h5 class="card-title">{e.name}</h5>
                             <p class="card-text">{e.description}</p>
+                        </div>
+                        <div class="card-body d-flex">
+                            <a href={e.github} class="card-link" alt=""><i class="fab fa-github fa-2x mx-1"></i></a>
+                            {e.site != '' && <a href={e.site} class="card-link" alt=""><i class="fas fa-external-link-alt fa-2x mx-1"></i></a>}
                         </div>
                     </div>
                 </div>
             )}
         </div>
+        </section>
     );
 };
 

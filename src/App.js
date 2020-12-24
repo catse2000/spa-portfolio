@@ -12,13 +12,13 @@ function App() {
   return (
     <Router>
       <Header />
-      <div class="container">
-        <Route path='/about' exact component={About} />
+      <div class="container site-content">
+        <Route path='/' exact component={About} />
         <Route path='/projects' component={Projects} />
         <Route path='/contact' component={ContactForm} />
         <Route path='/resume' component={Resume} />
       </div>
-      <Footer />
+      <Footer/>
     </Router>
   )
 }

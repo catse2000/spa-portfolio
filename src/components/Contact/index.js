@@ -37,27 +37,27 @@ function ContactForm(){
     };
 
     return(
-        <section>
-            <h1>Contact Me</h1>
+        <section className="m-4">
+            <h1 className="my-4 text-center">Contact Me</h1>
             <form id="contact-form" onSubmit={handleSubmit}>
-                <div>
-                    <label htmlFor="name">Name:</label>
-                    <input type="text" name="name" defaultValue={name} onBlur={handleChange}/>
+                <div class="row mb-3">
+                    <label htmlFor="name" className="form-label">Name:</label>
+                    <input type="text" className="form-control" name="name" defaultValue={name} onBlur={handleChange}/>
                 </div>
-                <div>
-                    <label htmlFor="email">Email Address:</label>
-                    <input type="email" name="email" defaultValue={email} onBlur={handleChange}/>
+                <div class="row mb-3">
+                    <label htmlFor="email" className="form-label">Email Address:</label>
+                    <input type="email" className="form-control" name="email" defaultValue={email} onBlur={handleChange}/>
                 </div>
-                <div>
-                    <label htmlFor="message">Message:</label>
-                    <textarea name="message" rows="5" defaultValue={message} onBlur={handleChange}/>
+                <div class="row mb-3">
+                    <label htmlFor="message" className="form-label">Message:</label>
+                    <textarea name="message" rows="5" className="form-control" defaultValue={message} onBlur={handleChange}/>
                 </div>
                 {errorMessage && (
                     <div>
                         <p className="error-text">{errorMessage}</p>
                     </div>
                 )}
-                <button type="submit">Submit</button>
+                <button type="submit" className="btn">Submit</button>
             </form>
         </section>
     )
