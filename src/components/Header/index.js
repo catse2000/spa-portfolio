@@ -5,13 +5,13 @@ function Header() {
     return (
         <div>
             <header>
-                <div class="container">
-                    <div class="d-flex justify-content-between align-items-center">
+                <div class="container-fluid">
+                    <div class="d-flex justify-content-between align-items-center flex-column">
                     <a href="/" className="header-name">
                         <h1>Amanda Babineaux</h1>
-                        <h2>Web Developer Portfolio</h2>
+                        <h2 className="text">Web Developer Portfolio</h2>
                     </a>
-                    <nav>
+                    <nav className="">
                         <ul className="nav">
                             <li className="nav-link">
                                 <NavLink to='/' exact={true} activeClassName='navActive'>About</NavLink>
@@ -28,7 +28,7 @@ function Header() {
                         </ul>
                     </nav>
                     </div>
-                </div>
+                    </div>
             </header>
         </div>
     )

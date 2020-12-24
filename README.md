@@ -7,7 +7,7 @@ This application is a digital resume! Hosted here are my portfolio of projects, 
 [Github Repo](https://github.com/catse2000/spa-portfolio)
 
 ## Deployed application
-[Deployed Application]()
+[Deployed Application](https://catse2000.github.io/spa-portfolio/)
 
 ## User Story
 ![UserStory](/src/assets/readme/user-story.png)

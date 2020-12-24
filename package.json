@@ -14,7 +14,7 @@
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.1",
     "web-vitals": "^0.2.4",
-    "homepage": "https:/catse2000.github.io/spa-portfolio"
+    "homepage": "https://catse2000.github.io/spa-portfolio"
   },
   "scripts": {
     "start": "react-scripts start",
