@@ -17,13 +17,13 @@ function Header() {
                                 <NavLink to='/' exact={true} activeClassName='navActive'>About</NavLink>
                             </li>
                             <li className="nav-link">
-                                <NavLink to='/contact'>Contact</NavLink>
-                            </li>
-                            <li className="nav-link">
-                                <NavLink to='/projects'>Projects</NavLink>
+                                <NavLink to='/projects'>Portfolio</NavLink>
                             </li>
                             <li className="nav-link">
                                 <NavLink to='/resume'>Resume</NavLink>
+                            </li>
+                            <li className="nav-link">
+                                <NavLink to='/contact'>Contact</NavLink>
                             </li>
                         </ul>
                     </nav>

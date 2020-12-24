@@ -1,9 +1,10 @@
 import React from 'react';
-
+import { Link } from "react-router-dom";
 function Resume() {
     return (
         <section className="m-4">
             <h2>My Resume</h2>
+            <a className="btn" href="https://drive.google.com/file/d/1xKCN4oFHFN4Db1kFUf719zcmKsMYisjl/view?usp=sharing" target="_blank" rel="noopener noreferrer">Downloadable Version</a>
             <div className="accordion accordion-flush">
                 <div className="accordion-item">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne"><h3>Summary of Qualifications</h3></button>
