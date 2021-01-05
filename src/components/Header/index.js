@@ -5,8 +5,8 @@ function Header() {
     return (
         <div>
             <header>
-                <div class="container-fluid">
-                    <div class="d-flex justify-content-between align-items-center flex-column">
+                <div className="container-fluid">
+                    <div className="d-flex justify-content-between align-items-center flex-column">
                     <a href="/" className="header-name">
                         <h1>Amanda Babineaux</h1>
                         <h2 className="text">Web Developer Portfolio</h2>

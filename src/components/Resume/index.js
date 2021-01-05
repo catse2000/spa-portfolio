@@ -7,7 +7,7 @@ function Resume() {
             <a className="btn" href="https://drive.google.com/file/d/1xKCN4oFHFN4Db1kFUf719zcmKsMYisjl/view?usp=sharing" target="_blank" rel="noopener noreferrer">Downloadable Version</a>
             <div className="accordion accordion-flush">
                 <div className="accordion-item">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne"><h3>Summary of Qualifications</h3></button>
+                    <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne"><h3>Summary of Qualifications</h3></button>
                     <div id="flush-collapseOne" class="accordion-collapse m-4 show">
                         <ul>
                             <li>5+ Years Graphic Design Experience</li>
@@ -19,8 +19,8 @@ function Resume() {
                     </div>
                 </div>
                 <div className="accordion-item">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo"><h3>Education</h3></button>
-                    <div id="flush-collapseTwo" class="accordion-collapse collapse m-4">
+                    <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo"><h3>Education</h3></button>
+                    <div id="flush-collapseTwo" className="accordion-collapse collapse m-4">
                         <h4>December 2014</h4>
                         <p><span>B.A. IN COMPUTER AND INFORMATION TECHNOLOGIES,</span> SOUTH TEXAS COLLEGE</p>
 
@@ -29,8 +29,8 @@ function Resume() {
                     </div>
                 </div>
                 <div className="accordion-item">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree"><h3>Experience</h3></button>
-                    <div id="flush-collapseThree" class="accordion-collapse collapse m-4">
+                    <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree"><h3>Experience</h3></button>
+                    <div id="flush-collapseThree" className="accordion-collapse collapse m-4">
                         <h4>JUNE 2018 – PRESENT</h4>
                         <h5><span>DIGITAL SIGNAGE and CLASSROOM TECHNOLOGY TRAINING SPECIALIST,</span>SOUTH TEXAS COLLEGE</h5>
                         <br></br>
@@ -93,8 +93,8 @@ function Resume() {
                     </div>
                 </div>
                 <div className="accordion-item">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour"><h3>Accomplishments</h3></button>
-                    <div id="flush-collapseFour" class="accordion-collapse collapse m-4">
+                    <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour"><h3>Accomplishments</h3></button>
+                    <div id="flush-collapseFour" className="accordion-collapse collapse m-4">
                         <ul>
                             <li>Assisted in researching, designing, and coordinating the installation of the current Digital Signage infrastructure.</li>
                             <li>Assisted in researching and determining the new Digital Signage software platform 22Miles to replace the existing Four Winds platform</li>
@@ -110,8 +110,8 @@ function Resume() {
                     </div>
                 </div>
                 <div className="accordion-item">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive"><h3>Certifications and Skills</h3></button>
-                    <div id="flush-collapseFive" class="accordion-collapse collapse m-4">
+                    <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive"><h3>Certifications and Skills</h3></button>
+                    <div id="flush-collapseFive" className="accordion-collapse collapse m-4">
                         <ul>
                             <li>2017 – Extron Associate Certifications</li>
                             <li>2017 – CTS Certification (Certified Technology Specialist)</li>
@@ -131,8 +131,8 @@ function Resume() {
                     </div>
                 </div>
                 <div className="accordion-item">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix"><h3>Other Achievements</h3></button>
-                    <div id="flush-collapseSix" class="accordion-collapse collapse m-4">
+                    <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix"><h3>Other Achievements</h3></button>
+                    <div id="flush-collapseSix" className="accordion-collapse collapse m-4">
                         <ul>
                             <li>2013 – Designed Book Cover for writer Juan Ochoa (English Faculty at South Texas College) labeled “Mariguano”</li>
                             <li>2010 – Assisted in design of Official Banner used by the Office of the Vice President for Information Services and Planning at South Texas College</li>

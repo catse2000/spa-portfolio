@@ -99,18 +99,18 @@ function Project() {
         <section className="m-4">
             <h2 className="my-4 text-center">Project Gallery</h2>
             <p className="text-center">Here is an assortment of the various projects I've worked on.</p>
-        <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div className="row row-cols-1 row-cols-md-3 g-4">
             {photos.map((e,i) =>
-                <div class="col"> 
-                    <div class="card shadow-sm">
+                <div className="col"> 
+                    <div className="card shadow-sm">
                         <img className="card-img-top" src={require(`../../assets/large/${i}.jpg`)} alt={e.name} />
-                        <div class="card-body">
-                            <h5 class="card-title">{e.name}</h5>
-                            <p class="card-text">{e.description}</p>
+                        <div className="card-body">
+                            <h5 className="card-title">{e.name}</h5>
+                            <p className="card-text">{e.description}</p>
                         </div>
-                        <div class="card-body d-flex">
-                            <a href={e.github} class="card-link" alt={e.name} target="_blank" rel="noopener noreferrer"><i class="fab fa-github fa-2x mx-1"></i></a>
-                            {e.site != '' && <a href={e.site} class="card-link" alt="" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt fa-2x mx-1"></i></a>}
+                        <div className="card-body d-flex">
+                            <a href={e.github} className="card-link" alt={e.name} target="_blank" rel="noopener noreferrer"><i class="fab fa-github fa-2x mx-1"></i></a>
+                            {e.site != '' && <a href={e.site} className="card-link" alt="" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt fa-2x mx-1"></i></a>}
                         </div>
                     </div>
                 </div>
